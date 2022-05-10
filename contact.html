@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Heading for page info -->
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<script src="script.js"></script>
+
+<!-- Navigation / Header -->
+
+<header>
+  <nav>
+    <ul>
+      <a class="logo-image" href="index.html"></a>
+
+      <a class="logo-text" href="index.html">DONNA VEAL PSYCHOLOGY</a>
+      
+      <li class="header"> <a class="header" href="index.html">HOME</li></a>
+      
+      <li class="header"> <a class="header" href="qualifications.html">QUALIFICATIONS</li></a>
+      
+      <li class="header"><a class="header" href="contact.html">CONTACT</li></a>
+
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section class="send">
+    <h2>Contact me</h2>
+    
+    <input class="full-name-contact" value="Full Name"></input>
+    
+    <br>
+    <br>
+    
+    <input class="content-contact" value="Message"></input> 
+
+    <input class="button" type="button" onclick="onClickEmailSend()"></button>
+
+    <script>
+      funtion onClickEmailSend() {
+        var name = document.getElementByClassName("full-name-contact")[0].innerHTML  // Grab the most local input fields with that class //
+        var message = document.getElementByClassName("content-contact")[0].innerHTML
+        console.log(name + ' ' + message)
+
+        $.ajax({
+          type: "post",
+          url: "/contact-script",
+          data: ["name": name, "message": message]
+        })
+      }
+    </script>
+  </section>
+</body>

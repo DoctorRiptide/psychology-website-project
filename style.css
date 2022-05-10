@@ -1,0 +1,165 @@
+/* Fonts */
+
+@font-face {
+  src: url("./fonts/header.ttf");
+  font-family: header;
+}
+
+@font-face {
+  src: url("./fonts/robotothick.ttf");
+  font-family: roboto-thick;
+}
+
+@font-face {
+  src: url("./fonts/robotothin.ttf");
+  font-family: roboto-thin;
+}
+
+/* Home Page */
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  background-size: 100%;
+  padding: 0 51% 0 0;
+  width: 60%;
+  height: 115px;
+  margin: -1.5%;
+  font-family: header;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  right: -25px;
+}
+
+nav li {
+  position: relative;
+  left: 37%;
+  top: -24px;
+  margin-left: 4%;
+}
+
+nav li.header:hover {
+  background-color: rgb(148, 203, 255);
+  padding: 5px 10px;
+  margin-right: -2.20539%;
+  position: relative;
+  left: 35.9%;
+}
+
+nav li, .logo-image {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.logo-image {
+  background-image: url("./images/logo.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: -10%;
+  margin-right: 7px;
+  padding: 0 0 0 0;
+  position: relative;
+  width: 50px;
+  height: 70px;
+  top: 9px;
+  left: 40px;
+}
+
+a.logo-text {
+  position: relative;
+  text-decoration: none;
+  right: -50px;
+  padding: 0;
+  color: black;
+  bottom: 23px;
+}
+
+ul li a.header {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-family: roboto-thin;
+}
+
+section div.section-text h2 {
+  position: relative;
+  top: -460px;
+  margin-left: 2%;
+  font-family: roboto-thin;
+  font-size: 190%;
+  padding: 0;
+}
+
+section div.section-text p {
+  font-size: 135%;
+  position: relative;
+  margin-left: 2%;
+  top: -480px;
+  font-family: roboto-thin;
+  width: 460px;
+  padding: 0;
+}
+
+/* Contact Details */
+
+section.contact-detail-a h2 {
+  font-size: 160%;
+  position: relative;
+  bottom: -30px;
+  right: -40px;
+}
+
+section.contact-detail-a p {
+  font-size: 135%;
+  position: relative;
+  bottom: -20px;
+  right: -40px;
+}
+
+/* Contact */
+
+section.send input {
+  background-color: rgb(240, 247, 255);
+  position: relative;
+  padding: 5px 0px 5px 10px;
+  top: 30px;
+  right: -36%;
+  border: 0;
+  border-radius: 25px;
+  width: 33%; 
+  height: 6%;
+  font-size: 75%;
+}
+
+section.send h2 {
+  position: relative;
+  top: 30px;
+  right: -36%;
+}
+
+section.send input.button {
+  background-color: rgb(15, 119, 255);
+  font-family: roboto-thin;
+  width: 33%;
+  height: 6%;
+  border-radius: 25px;
+  position: relative;
+  top: 83px;
+  right: -2.9%;
+}
